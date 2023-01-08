@@ -6,9 +6,11 @@
 printf('mettre du code');
 ```
 
+faire un tableau 
 |Matériel|Quantité|Prix unitaire|Prix total|Remarques|
 |--------|--------|-------------|----------|-|
 
+insérer une image via le dossier img
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/esp32.jpg?raw=true)
 
 ## Objectif 

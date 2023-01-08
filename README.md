@@ -9,7 +9,7 @@ printf('mettre du code');
 |Matériel|Quantité|Prix unitaire|Prix total|Remarques|
 |--------|--------|-------------|----------|-|
 
-![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/monImage.png?raw=true)
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/esp32.png?raw=true)
 
 ## Objectif 
 

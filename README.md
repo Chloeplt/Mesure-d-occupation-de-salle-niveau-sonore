@@ -31,6 +31,9 @@ Permet aux utilisateurs de savoir si la bibliothèque permet une ambiance de tra
 
 - Pour les supermarchées : 
 
+
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/exemple_d'utilisation_projet_iot.png?raw=true)
+
 Permet aux u
 
  L’objet LoRaWAN est identifié par son DevEUI et associé à une pièce ou à un lieu. Il peut être enregistré sur un réseau public national en OTAA ou sur un réseau privé en OTAA comme CampusIoT. Cet objet pourrait participer à un réseau maillé (“mesh”) LoRa (type Amazon Sidewalk).
@@ -50,14 +53,17 @@ Une vidéo de démonstration est disponible ici.
 - Notr
 ## Architechture globale du système - Léo
 > Consigne : définir l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
-Le système est composé d’un WIO Terminal, d’un ESP32-EYE et d’un capteur de présence PIR. 
-L’ESP32-EYE est un capteur embarquant une caméra et un microphone. Il communiquera avec le Wio Terminal grâce au protocole Wifi. Le capteur PIR sera utilisé pour détecter la présence de quelqu’un et communiquera directement avec le Wio Terminal sur lequel il sera branché. Enfin nous utiliserons des éléments directement présent sur le Wio Terminal tel qu’une LED, les boutons pour avoir plusieurs mods de fonctionnement (mode normal, mode économie d'énergie, mode débogage), ainsi que l’écran d’affichage si besoin, cela dépendra de l’autonomie souhaité et du mode en cours d’utilisation. Pour le mode normal il sera possible d’afficher des données en temps réel et l’écran pourra être utile pour le mode débogage car on pourra afficher plus de variables.
-Le principe de fonctionnement est le suivant. Lorsque le capteur de présence PIR détecte un mouvement, il allume la caméra et la lumière. Cette dernière est ici représentée par la LED du Wio Terminal. La caméra (embarqué sur l’ESP32-EYE) prend alors le relais pour détecter la présence d’individus. Elle prend une photo toutes les minutes (pour diminuer la consommation) et tant que des individus sont détectés, la lumière reste allumée et le confort sonore est indiqué. Le confort sonore est mesuré par l’ESP32-EYE grâce à un micro intégré qui relèvera l’intensité sonore. Si il est trop haut la LED clignotera pour avertir les personnes présentes. A noter qu'ici la LED n’est pas très voyante mais on pourra par la suite en ajouter une externe qui sera plus voyante. Lorsque plus personne n’est détectée, la caméra et la lumière s’éteignent et le capteur de présence reprend sa détection. 
-L’avantage d’une caméra avec détection d’individus comparé à un détecteur de mouvement/présence est que même si la personne ne bouge pas, elle reste détectée. Qui ne s’est jamais retrouvé sans lumière aux toilettes et à du agiter les bras afin de voir quelque chose ?
+
+ Le système est composé d’un WIO Terminal, d’un ESP32-EYE et d’un capteur de présence PIR. 
+ L’ESP32-EYE est un capteur embarquant une caméra et un microphone. Il communiquera avec le Wio Terminal grâce au protocole Wifi. Le capteur PIR sera utilisé pour détecter la présence de quelqu’un et communiquera directement avec le Wio Terminal sur lequel il sera branché. Enfin nous utiliserons des éléments directement présent sur le Wio Terminal tel qu’une LED, les boutons pour avoir plusieurs mods de fonctionnement (mode normal, mode économie d'énergie, mode débogage), ainsi que l’écran d’affichage si besoin, cela dépendra de l’autonomie souhaité et du mode en cours d’utilisation. Pour le mode normal il sera possible d’afficher des données en temps réel et l’écran pourra être utile pour le mode débogage car on pourra afficher plus de variables.
+Le principe de fonctionnement est le suivant. Lorsque le capteur de présence PIR détecte un mouvement, il allume la caméra et la lumière. Cette dernière est ici représentée par la LED du Wio Terminal. La caméra (embarqué sur l’ESP32-EYE) prend alors le relais pour détecter la présence d’individus. Elle prend une photo toutes les minutes (pour diminuer la consommation) et tant que des individus sont détectés, elle transmet au terminal WIO le taux d’occupation de la pièce. Tant qu’il y a détection, la lumière reste allumée et le confort sonore ainsi que le taux d’occupation de la pièce est indiqué. Le confort sonore est mesuré par l’ESP32-EYE grâce à un micro intégré qui relèvera l’intensité sonore. Si il est trop haut la LED clignotera pour avertir les personnes présentes. A noter qu'ici la LED n’est pas très voyante mais on pourra par la suite en ajouter une externe qui sera plus voyante. Lorsque plus personne n’est détectée, la caméra et la lumière s’éteignent et le capteur de présence reprend sa détection. 
+ L’avantage d’une caméra avec détection d’individus comparé à un détecteur de mouvement/présence est que même si la personne ne bouge pas, elle reste détectée. Qui ne s’est jamais retrouvé sans lumière aux toilettes et à du agiter les bras afin de voir quelque chose ?
 Notre modèle embarquera 3 mods différents.
-Le mode de fonctionnement normal fonctionne comme expliqué ci-dessus. Il affiche sur l’écran du terminal WIO le confort sonore lorsque des personnes sont détectées et fait clignoter la LED si l’intensité sonore est trop haute.
-Le mode économie d’énergie n’utilisera pas l’écran afin de consommer moins de ressources. La LED clignotera toujours si l’intensité sonore est trop haute et embarquera une fonctionnalité supplémentaire. Cette dernière est l’utilisation d’un détecteur de luminosité au dos du terminal. Si on choisit de fixer le terminal sur une fenêtre, on pourra détecter si la lumière du soleil est assez forte et dans le cas échéant il ne sera pas nécessaire d’allumer la lumière.
+ Le mode de fonctionnement normal fonctionne comme expliqué ci-dessus. Il affiche sur l’écran du terminal WIO le confort sonore et le taux d’occupation lorsque des personnes sont détectées. Si fait clignoter la LED si l’intensité sonore est trop haute.
+ Le mode économie d’énergie n’utilisera pas l’écran afin de consommer moins de ressources. La LED clignotera toujours si l’intensité sonore est trop haute et embarquera une fonctionnalité supplémentaire. Cette dernière est l’utilisation d’un détecteur de luminosité au dos du terminal. Si on choisit de fixer le terminal sur une fenêtre, on pourra détecter si la lumière du soleil est assez forte et dans le cas échéant il ne sera pas nécessaire d’allumer la lumière.
 Enfin le mode débogage affichera plus d'informations sur l’écran si on a besoin de vérifier le fonctionnement des différents capteurs et fera clignoter la LED.
+On pourra aussi définir un mode supplémentaire de surveillance, celui-ci serait actif en dehors des plages d’utilisations de la salle/pièce. Le fonctionnement serait similaire à celui du mode économie d’énergie mais si quelqu’un est détecté, la caméra prendra en photo l’individu toutes les 5 secondes et cette photo sera envoyée par wifi, on pourra se connecter avec un ordinateur au wifi pour récupérer ses différentes photos en temps réel.
+
 
 
 ## Sécurité globale - Chloé
@@ -66,14 +72,30 @@ Enfin le mode débogage affichera plus d'informations sur l’écran si on a bes
 ## Respect de la vie privée du service - Léo
 > Consigne : définir le respect de la vie privée du service ([RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)) : lister les risques d’atteinte au respect de la vie privée
 
+ Pour la caméra, le micro et le capteur de détection PIR, le principal risque d’atteinte au respect de la vie privée provient d’une possible déduction d’informations sur les activités et les habitudes de vie des personnes dans l'environnement surveillé. Cela pourrait survenir si quelqu’un parvient à prendre le contrôle ou à récupérer les informations des différents capteurs. 
+Cependant les capteurs n’offrent pas les mêmes informations. Le capteur de présence sera limité à savoir les habitudes de présence dans l’environnement surveillé. 
+ Le micro est seulement utilisé pour mesurer le volume sonore, il peut donc fournir la même information que le capteur de présence. Cependant, si quelqu’un arrive à flasher un autre code par dessus, il pourrait avoir accès aux conversations présentes dans la pièce. 
+ Enfin la caméra pourra offrir une information supplémentaire à la présence ou non d’individus, celle de l’image. Une personne pourra donc potentiellement récupérer les photos envoyées par la caméra si il arrive à s’y connecter et changer le code ou alors si il parvient à se connecter au wifi, que la caméra est dans le mode surveillance et que quelqu’un est détecté (donc en dehors des horaires d’utilisation de la pièce/salle.
+	Des mesures peuvent être prises pour avertir les utilisateurs ou diminuer les risques. Le principal moyen de diminuer les risques est de rajouter un chiffrement des données en plus de la sécurité du Wifi. Un autre moyen serait de rendre l’accès au dispositif plus dur. Par exemple en le dissimulant, en le disposant en hauteur ou en confectionnant un boîtier supplémentaire pour compliquer une connexion au hardware. Pour la partie avertissement des utilisateurs, leur diffuser une politique de confidentialité, leur faire signer des conditions d’utilisations ou demander leur accords si le cadre est privé peuvent être une possibilité.
+
+
 ## Architecture matérielle de l'objet - Chloé
-> Consigne : définir l’architecture matérielle de l’objet,
+> Consigne : définir l’architecture matérielle de l’objet, -> voir si la partie Architechture globale du système ne répond pas à cette question
 
 ## Coût de la BOM du produit - Léo
 > Consigne : 
 > estimer le coût de la BOM de votre produit (composants, PCB et enclosure) pour 5000 unités produites
 . pour le boitier, vous pouvez rechercher des boitiers “standards” disponibles dans les catalogues fournisseurs
 . pour le PCB, vous pouvez fournir une estimation du prix de fabrication du PCB et du masque chez des fournisseurs comme [https://jlcpcb.com/](https://jlcpcb.com/) , [https://www.wedirekt.fr/fr/](https://www.wedirekt.fr/fr/) …
+
+Le tableau arrive après
+|Matériel|Quantité|Prix unitaire en $|Prix total en $|
+|Wio Terminal|1|30,9|154500|
+|PIR motion sensor|1|6,1|30500|
+|ESP32-EYE|1|22,5|112500|
+|LED|1|0,0447|223,5|
+|Système complet|5000|59,5447|297723,5|
+|--------|--------|-------------|----------|-|
 
 ## Coût de certification ETSI du produit - Chloé
 > Consigne : estimer le coût de certification ETSI du produit, le coût de [certification LoRa Alliance](https://lora-alliance.org/lorawan-certification/) du produit ...

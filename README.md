@@ -17,32 +17,17 @@ insérer une image via le dossier img
 
 L’objectif de notre projet est de mesurer de taux d'occupation d'une salle, ansi que son niveau sonore. La communication se fera avec un protocole Wifi et permettra de transmettre des payloads lourd dans un périmètre restraint.
 Notre produit peut avoir de multiple utilité et donc de multiple client potentiel.
-- Pour les salles de réunions des entreprises :
-Savoir quelles salles sont disponible
 
-- Pour les bibliothèques:
+- Pour les salles de réunions des entreprises 
 
-Permet aux utilisateurs de savoir si la bibliothèque permet une ambiance de travail optimal. Assez d'espace pour venir travailler, assez silencieux pour se concentrer.
+- Pour les bibliothèques
 
+- Pour les supermarchées 
 
-- Pour les salle de concert, bar, salle de sport ect :
-
-
-
-- Pour les supermarchées : 
+- Pour les salle de concert, bar, salle de sport ect
 
 
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/exemple_d'utilisation_projet_iot.png?raw=true)
-
-Permet aux u
-
- L’objet LoRaWAN est identifié par son DevEUI et associé à une pièce ou à un lieu. Il peut être enregistré sur un réseau public national en OTAA ou sur un réseau privé en OTAA comme CampusIoT. Cet objet pourrait participer à un réseau maillé (“mesh”) LoRa (type Amazon Sidewalk).
-
-L’objet sirène remonte régulièrement des mesures prises sur les capteurs (TH, smoke, CO,CO2...) équipant celui-ci au format LPP.
-
-L’objet sirène est déclenché soit par un bouton poussoir (ie panic button), on utilisera ce bouton poussoir, soit par observation d’un événement “tragique” (changement “brutale” de la température, CO2, CO, fumée …) que l'on fera avec le capteur SCD30. Quand la sirène est munie d’un PIR Motion sensor, elle peut détecter et envoyer périodiquement la présence probable de personnes à proximité d’elle.
-
-L’objet sirène envoie périodiquement un message de status (ie heart beat) une fois déclenchée.
 
 Une vidéo de démonstration est disponible ici.
 
@@ -67,7 +52,15 @@ On pourra aussi définir un mode supplémentaire de surveillance, celui-ci serai
 
 
 ## Sécurité globale - Chloé
-> Consigne : définir la sécurité globale (clé de chiffrage)
+
+Nous utilisons un protocole Wifi pour communiquer entre notre ESP-EYE et notre Wio Terminal. Afin d’assurer une sécurité optimale de notre système il faut :
+
+-	Mettre en place une **clé de chiffrement de 256 bits**. Nous utilisons une clé de chiffrement très forte car les données transmissent sont très sensible, nous voulons donc maximiser la sécurité. Cette première étape permet de lutter contre les attaques de force brute.
+
+-	Utiliser le **protocole de sécurité WPA2**(Wifi Protected Access) qui utilise un chiffrement AES(Advanced Encryption Standard), afin de lutter contre les attaques de type « meet in the middle ».
+
+Un **SSID** et un **mot de passe** seront d’ores et déjà configuré dans le système et ne pourront être visible et modifiable qu’avec un mot de passe.
+
 
 ## Respect de la vie privée du service - Léo
 > Consigne : définir le respect de la vie privée du service ([RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)) : lister les risques d’atteinte au respect de la vie privée

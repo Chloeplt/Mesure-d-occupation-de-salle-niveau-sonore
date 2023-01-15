@@ -88,14 +88,17 @@ Cependant les capteurs n’offrent pas les mêmes informations. Le capteur de pr
 . pour le boitier, vous pouvez rechercher des boitiers “standards” disponibles dans les catalogues fournisseurs
 . pour le PCB, vous pouvez fournir une estimation du prix de fabrication du PCB et du masque chez des fournisseurs comme [https://jlcpcb.com/](https://jlcpcb.com/) , [https://www.wedirekt.fr/fr/](https://www.wedirekt.fr/fr/) …
 
-Le tableau arrive après
-|Matériel|Quantité|Prix unitaire en $|Prix total en $|
-|Wio Terminal|1|30,9|154500|
-|PIR motion sensor|1|6,1|30500|
-|ESP32-EYE|1|22,5|112500|
-|LED|1|0,0447|223,5|
-|Système complet|5000|59,5447|297723,5|
-|--------|--------|-------------|----------|-|
+| Matériel        | Quantité | Prix unitaire      | Prix total       |
+|-----------------|----------|--------------------|------------------|
+| Wio Terminal    | 1        | 30,9               | 154500           |
+| PIR motion sensor| 1       | 6,1                | 30500            |
+| ESP32-EYE       | 1        | 22,5               | 112500           |
+| LED             | 1        | 0,0447             | 223,5            |
+| Système complet | 5000     | 59,5447            | 297723,5         |
+
+
+Note : les prix indiqués sont en *$*
+
 
 ## Coût de certification ETSI du produit - Chloé
 > Consigne : estimer le coût de certification ETSI du produit, le coût de [certification LoRa Alliance](https://lora-alliance.org/lorawan-certification/) du produit ...

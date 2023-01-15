@@ -98,7 +98,21 @@ Note : les prix indiqués sont en *$*
 
 
 ## Coût de certification ETSI du produit - Chloé
-> Consigne : estimer le coût de certification ETSI du produit, le coût de [certification LoRa Alliance](https://lora-alliance.org/lorawan-certification/) du produit ...
+
+Le cout de la certification ETSI dépend principalement des normes ETSI appliqué à notre produit. Mais il est assez difficile d’avoir une idée précise du prix. En effet, le cout dépend aussi de nombreux autres facteurs tels que la complexité du produit, le nombre de tests requis et les coûts administratifs associés à la certification. 
+
+Le Wio terminal utilise des bandes passantes de fréquences 2.4 GHz, nous pouvons donc en déduire certaine norme applicable à notre produit :
+
+-	**EN 300 328:** Cette norme spécifie les exigences pour l'utilisation des bandes de fréquences de 2,4 GHz pour les dispositifs sans fil dans l'Union Européenne. Cette norme couvre les exigences de compatibilité électromagnétique (CEM) et de sécurité pour les dispositifs sans fil utilisant ces bandes de fréquences.
+-	
+-	**EN 301 489-1:** Cette norme spécifie les exigences pour l'immunité électromagnétique pour les équipements terminaux et les équipements réseau utilisés dans les systèmes de communication électronique.
+-	
+-	**EN 301 489-17:** Cette norme spécifie les exigences pour la sécurité des équipements terminaux et des réseaux utilisés dans les systèmes de communication électronique.
+-	
+-	**EN 303 645:** Cette norme spécifie les exigences de sécurité pour les objets connectés (smart-objects) utilisant les technologies de communication radio. 
+
+Les certifications coutent en moyenne 800€ pour 3 ans de validité. On peut donc estimer un **total de 1067€/ans.**
+
 
 ## Implémentation du logiciel embarqué - Léo 
 > Consigne : proposer une implémentation du logiciel embarqué de l’objet défini.

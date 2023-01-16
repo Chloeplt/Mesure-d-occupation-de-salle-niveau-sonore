@@ -62,7 +62,7 @@ Notre modèle embarquera 3 mods différents.
 Enfin le **mode débogage** affichera plus d'informations sur l’écran si on a besoin de vérifier le fonctionnement des différents capteurs et fera clignoter la LED.
 On pourra aussi définir un mode supplémentaire de surveillance, celui-ci serait actif en dehors des plages d’utilisations de la salle/pièce. Le fonctionnement serait similaire à celui du mode économie d’énergie mais si quelqu’un est détecté, la caméra prendra en photo l’individu toutes les 5 secondes et cette photo sera envoyée par wifi, on pourra se connecter avec un ordinateur au wifi pour récupérer ses différentes photos en temps réel.
 
-# Changements de comportement de l’objet en fonction des événements
+### Changements de comportement de l’objet en fonction des événements
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/diagramme_automate.png?raw=true)
 
 

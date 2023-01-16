@@ -31,7 +31,7 @@ Notre produit peut avoir de multiple utilité et donc de multiple client potenti
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/exemple_d'utilisation_projet_iot.png?raw=true)
 
 Voci la brochure commercial de notre produit :
-![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/Brochure_Commercial/Brochure_Commercial_Occupan-SEE?raw=true)
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/exte_brochure.jpg?raw=true)
 
 Une vidéo de démonstration est disponible ici.
 

@@ -6,12 +6,6 @@
 printf('mettre du code');
 ```
 
-faire un tableau 
-|Matériel|Quantité|Prix unitaire|Prix total|Remarques|
-|--------|--------|-------------|----------|-|
-
-insérer une image via le dossier img
-![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/esp32.jpg?raw=true)
 
 ## Objectif - Chloe & Léo
 
@@ -155,7 +149,7 @@ La comsommation de notre produit est consequente, ceci du fait des transmission 
 
 Pour ce qui est du Wio Terminal, Nous utilisons le module ajoutant une **batterie LiPo de 650 mAh**. Cette batterie à une **autonomie de 7h en utilisation continue**. Il est donc demander à l'utilisateur de le brancher tous les soirs.
 
-## Analyse du cycle de vie du produit 
+## Analyse du cycle de vie du produit - Chloe
 > Consigne : réaliser une analyse (brève) du cycle de vie du produit “durable” et “[sobre](https://www.youtube.com/watch?v=aX_tzI7w7Qo)” ([ACV](https://fr.wikipedia.org/wiki/Analyse_du_cycle_de_vie))
 
 ## Montrer les intégrations effectuées

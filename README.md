@@ -38,7 +38,7 @@ Notre produit peut avoir de multiple utilité et donc de multiple client potenti
 
 Une vidéo de démonstration est disponible ici.
 
-## Analyse de marché - Chloé
+## Analyse de marché
 
 Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut **impérativement faire un devis** au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
 Néamoins, nous avons trouvé quelques concurrent potentielle :
@@ -68,7 +68,7 @@ On pourra aussi définir un mode supplémentaire de surveillance, celui-ci serai
 
 
 
-## Sécurité globale - Chloé
+## Sécurité globale
 
 Nous utilisons un protocole Wifi pour communiquer entre notre ESP-EYE et notre Wio Terminal. Afin d’assurer une sécurité optimale de notre système il faut :
 
@@ -114,7 +114,7 @@ Pour la partie avertissement des utilisateurs, leur diffuser une **politique de 
 Note : les prix indiqués sont en *$*
 
 
-## Coût de certification ETSI du produit - Chloé
+## Coût de certification ETSI du produit
 
 Le cout de la certification ETSI dépend principalement des normes ETSI appliqué à notre produit. Mais il est assez difficile d’avoir une idée précise du prix. En effet, le cout dépend aussi de nombreux autres facteurs tels que la complexité du produit, le nombre de tests requis et les coûts administratifs associés à la certification. 
 

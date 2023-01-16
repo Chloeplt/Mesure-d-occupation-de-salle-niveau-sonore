@@ -172,7 +172,7 @@ La comsommation de notre produit est consequente, ceci du fait des transmission 
 
 Pour ce qui est du Wio Terminal, Nous utilisons le module ajoutant une **batterie LiPo de 650 mAh**. Cette batterie à une **autonomie de 7h en utilisation continue**. Il est donc demander à l'utilisateur de le brancher tous les soirs.
 
-## Analyse du cycle de vie du produit - Chloe
+## Analyse du cycle de vie du produit
 
 L'analyse du cycle de vie d'un produit prend en compte plusieurs critères comme, l'extraction des matières premières, la production, l'utilisation, la fin de vie et le recyclage.
 

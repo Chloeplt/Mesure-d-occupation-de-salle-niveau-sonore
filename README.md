@@ -133,8 +133,9 @@ Les certifications coutent en moyenne 800€ pour 3 ans de validité. On peut do
 ## Implémentation du logiciel embarqué - Léo 
 > Consigne : proposer une implémentation du logiciel embarqué de l’objet défini.
 
-## Format des messages Uplink et Downlink - Chloé
-> Consigne : définir/documenter le format des messages uplink et downlink échangés (dans le cas des objets LoRaWAN, privilégiez le format LPP)
+## Trame Wi-FI
+
+ Wio Terminal utilise la version 2.4GHz de la norme WiFi (IEEE 802.11b/g/n).
 
 ## Logiciel embarqué de l'objet - Léo
 > Consigne : définir le logiciel embarqué de l’objet.

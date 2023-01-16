@@ -27,7 +27,11 @@ Notre produit peut avoir de multiple utilité et donc de multiple client potenti
 - Pour les salle de concert, bar, salle de sport ect
 
 
+
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/exemple_d'utilisation_projet_iot.png?raw=true)
+
+Voci la brochure commercial de notre produit :
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/Brochure_Commercial/Brochure_Commercial_Occupan-SEE?raw=true)
 
 Une vidéo de démonstration est disponible ici.
 

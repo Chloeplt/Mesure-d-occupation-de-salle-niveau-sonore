@@ -47,7 +47,7 @@ Néamoins, nous avons trouvé quelques concurrent potentielle :
 
 On remarque que le desavantage commun de tout nos concurrents est **l'absence d'un écran tel que notre Wio terminal au niveau des portes des salles de réunion**. Nous devons donc mettre en avant cette différence afin de vendre au mieux notre produit.
 
-## Architechture globale du système - Léo
+## Architechture globale du système
 > Consigne : définir l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
 
 Le système est composé d’un **WIO Terminal**, d’un **ESP32-EYE** et d’un **capteur de présence PIR**. 
@@ -77,7 +77,7 @@ Nous utilisons un protocole Wifi pour communiquer entre notre ESP-EYE et notre W
 Un **SSID** et un **mot de passe** seront d’ores et déjà configuré dans le système et ne pourront être visible et modifiable qu’avec un mot de passe.
 
 
-## Respect de la vie privée du service - Léo
+## Respect de la vie privée du service 
 > Consigne : définir le respect de la vie privée du service ([RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)) : lister les risques d’atteinte au respect de la vie privée
 
 Pour la **caméra**, le **micro** et le **capteur de détection PIR**, le principal risque d’atteinte au respect de la vie privée provient d’une possible déduction d’informations sur les activités et les habitudes de vie des personnes dans l'environnement **surveillé**. 
@@ -95,7 +95,7 @@ Pour la partie avertissement des utilisateurs, leur diffuser une **politique de 
 
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/Architecture_Materielle.png?raw=true)
 
-## Coût de la BOM du produit - Léo
+## Coût de la BOM du produit
 > Consigne : 
 > estimer le coût de la BOM de votre produit (composants, PCB et enclosure) pour 5000 unités produites
 . pour le boitier, vous pouvez rechercher des boitiers “standards” disponibles dans les catalogues fournisseurs
@@ -155,12 +155,33 @@ Wio Terminal utilise la version 2.4GHz de la norme WiFi (IEEE 802.11b/g/n). Les 
 Utilisée pour transmettre des données utiles entre les stations.
 Dans notre cas, le nombre de personne presente dans la pièce, le niveau sonore, et potentiellement des photos.
 
-## Logiciel embarqué de l'objet - Léo
+## Logiciel embarqué de l'objet
 > Consigne : définir le logiciel embarqué de l’objet.
+
+Pour le langage de programmation, nous avons choisi d'utiliser **Arduino**. Même si ce n'est pas le plus optimisé ni celui qui consomme le moins, nous le trouvions utile dans le **cadre de ce projet**. Les **points négatifs** du langage **Arduino** tels que sa **capacité de stockage limitée** ou sa **taille mémoire** ne posaient **pas de problème** ici. 
+
+En effet, ce dernier permet une **prise en main rapide** et possède une s**yntaxe proche du C**, un langage que nous avons beaucoup utilisé. En plus de cela, de nombreux projets et **exemples** sont **disponibles en ligne**, ce qui est pratique dans le cadre de ce projet où le but n'était pas de coder l'intégralité du projet mais plutôt de réutiliser des bouts de code ici et là afin de faire fonctionner tous les objets ensemble. Enfin, **Arduino** était **compatible** avec l'**ensemble de nos objets**, ce qui rendait la chose **pratique** car devoir jongler entre plusieurs langages de programmation n'est pas le plus évident.
+
 
 ## Métrique logiciel
 > Consigne : donner les métriques logiciel du logiciel embarqué (nombre de lignes de code, taille du binaire du firmware ie le fichier .bin)
 > Consigne :  compter le nombre de lignes de code développé (coté objet, coté application) avec un outil comme [cloc](https://github.com/AlDanial/cloc). Précisez les langages et les outils utilisés (git, arduino-cli …)
+
+### Coté Wio Terminal :
+Fichier **Wio_Terminal_code.ino** :
+* **Taille du fichier : 9.88 Ko**
+* **128 lignes de code**
+* **39 lignes de commentaires**
+* **5 variables déclarées** (pir_detection, sonor_lvl_high, nb_occupant, mode, first_eco)
+* **14 fonctions déclarées** (setup, loop, mode_demarage, mode_normal, mode_eco, mode_debug, start_screen, passage_mode_normal, passage_mode_eco, passage_mode_debug, _Too_loud_from_micro, _Not_Too_loud_from_micro, _No_PeopleDetected_PIR, _PeopleDetected_PIR)
+* **5 #define utilisés** (PIR_MOTION_SENSOR, LCD_BACKLIGHT, TFT_eSPI, Free_Fonts, TFT_eSprite)
+* **2 include utilisés** (TFT_eSPI, Free_Fonts)
+
+Fichier **Free_Fonts.h** :
+* **Taille du fichier : 9.91 Ko**
+* **91 lignes de code**
+* **85 lignes de commentaires**
+* **24 #define utilisés**
 
 ## Instrumentation du logiciel embarqué
 > Consigne : Instrumenter le logiciel embarqué pour mesurer les différents temps d’exécution des principales phases d’exécution (par exemple: durée d’une prise de photo, écriture sur carte SD, inférences avec un réseau de neurones …)

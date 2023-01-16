@@ -43,21 +43,13 @@ Une vidéo de démonstration est disponible ici.
 Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut **impérativement faire un devis** au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
 Néamoins, nous avons trouvé quelques concurrent potentielle :
 
-| Marque          | Avantage                             | Inconveniant      | 
-|-----------------|--------------------------------------|----------------------------------|
-| Wx Company      | Capteur température/qualité de l'air | Pas d'écran sur la porte              |
-|                 | Application mobile                   | Pas de capteur de confort sonore |
-| ubigreen        | Bas débit LPWAN                      | Detection uniquement en dessous des tables                |
-|                 | Site web/Application mobile          | Pas d'écran sur la porte
-|                 |                                      |
-| spaceti         | 1                  | 22,5               | 
-| XPAIR           | 1                  | 0,0447             | 
+| Marque          | Avantage                                                   | Inconveniant                                                                        | 
+|-----------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Wx Company      | Capteur température/qualité de l'air, Application mobile   | Pas d'écran sur la porte, Pas de capteur de confort sonore                          |
+| ubigreen        | Bas débit LPWAN, Site web/Application mobile               | Capteur sous les tables, Pas d'écran sur la porte, Pas de capteur de confort sonore | 
+| spaceti         | Durée de vie batterie - Jusqu'à 15 ans                     | Uniquement PIR sensor, pas d''cran sur la porte, pas de capteur de confort sonore   | 
+| XPAIR           | Caméra thermique (anonymat), BLE, mesure du confort sonore | Pas d'ecran sur la porte                                                            | 
 
-|Marque |Avantage| |
-||||
-|||Detection en dessous des tables,pas d'ecran sur la porte, pas de capteur de confort sonore|
-||Durée de vie batterie - Jusqu'à 15 ans|Uniquement un PIR sensor, pas d'ecran sur la porte, pas de capteur de confort sonore|
-||Caméra thermique (anonymat, BLE, mesure du confort sonore|pas d'ecran sur la porte|
 
 On remarque que le desavantage commun de tout nos concurrents est **l'absence d'un écran tel que notre Wio terminal au niveau des portes des salles de réunion**. Nous devons donc mettre en avant cette différence afin de vendre au mieux notre produit.
 

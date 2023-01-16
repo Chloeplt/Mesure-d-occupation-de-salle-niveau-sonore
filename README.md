@@ -153,7 +153,7 @@ Prévoir de montrer la trace console de l’objet pendant la démonstration.
 
 La comsommation de notre produit est consequente, ceci du fait des transmission de donnée via le Wi-Fi et de l'utilisation d'une caméra. Pour la camera, nous avons donc decidé de ne pas utiliser de batterie mais de **brancher notre système directement au secteur** en utilisant un adaptateur **Micro-USB (5V, 3A)**. Etant donnée que la camera sera contre un mur ou au plafond, ça ne sera pas derangeant pour l'utilisation.
 
-Pour ce qui est du Wio Terminal, Nous utilisons le module ajoutant une batterie LiPo de 650 mAh.
+Pour ce qui est du Wio Terminal, Nous utilisons le module ajoutant une **batterie LiPo de 650 mAh**. Cette batterie à une **autonomie de 7h en utilisation continue**. Il est donc demander à l'utilisateur de le brancher tous les soirs.
 
 ## Analyse du cycle de vie du produit 
 > Consigne : réaliser une analyse (brève) du cycle de vie du produit “durable” et “[sobre](https://www.youtube.com/watch?v=aX_tzI7w7Qo)” ([ACV](https://fr.wikipedia.org/wiki/Analyse_du_cycle_de_vie))

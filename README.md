@@ -94,7 +94,8 @@ Pour la partie avertissement des utilisateurs, leur diffuser une **politique de 
 
 
 ## Architecture matérielle de l'objet - Chloé
-> Consigne : définir l’architecture matérielle de l’objet, -> voir si la partie Architechture globale du système ne répond pas à cette question
+
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/Architeture_Materiel.png?raw=true)
 
 ## Coût de la BOM du produit - Léo
 > Consigne : 

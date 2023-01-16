@@ -149,8 +149,9 @@ Les certifications coutent en moyenne 800€ pour 3 ans de validité. On peut do
 > Consigne : Instrumenter le logiciel embarqué pour mesurer les différents temps d’exécution des principales phases d’exécution (par exemple: durée d’une prise de photo, écriture sur carte SD, inférences avec un réseau de neurones …)
 Prévoir de montrer la trace console de l’objet pendant la démonstration.
 
-## Durée de vie de la batterie
-> Consigne : estimer la durée de vie de la batterie de l’objet (pour LoRaWAN en fonction du datarate comme avec l’outil [https://www.elsys.se/en/battery-life-calculator/](https://www.elsys.se/en/battery-life-calculator/)
+## Alimentation du produit
+
+La comsommation de notre produit est consequente, ceci du fait des transmission de donnée via le Wi-Fi et de l'utilisation d'une caméra. Nous avons donc decidé de ne pas utiliser de batterie mais de **brancher notre système directement au secteur** en utilisant un adaptateur **USB-C (5V, 3A)**. 
 
 ## Analyse du cycle de vie du produit 
 > Consigne : réaliser une analyse (brève) du cycle de vie du produit “durable” et “[sobre](https://www.youtube.com/watch?v=aX_tzI7w7Qo)” ([ACV](https://fr.wikipedia.org/wiki/Analyse_du_cycle_de_vie))

@@ -43,7 +43,7 @@ Une vidéo de démonstration est disponible ici.
 Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut **impérativement faire un devis** au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
 Néamoins, nous avons trouvé quelques concurrent potentielle :
 
-| Marque          | Avantage                                                   | Inconveniant                                                                        | 
+| Marque          | Avantage(s)                                                | Inconvénient(s)                                                                     | 
 |-----------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Wx Company      | Capteur température/qualité de l'air, Application mobile   | Pas d'écran sur la porte, Pas de capteur de confort sonore                          |
 | ubigreen        | Bas débit LPWAN, Site web/Application mobile               | Capteur sous les tables, Pas d'écran sur la porte, Pas de capteur de confort sonore | 

@@ -95,7 +95,7 @@ Pour la partie avertissement des utilisateurs, leur diffuser une **politique de 
 
 ## Architecture matérielle de l'objet - Chloé
 
-![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/Architecture_Materiel.png?raw=true)
+![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/Architecture_Materielle.png?raw=true)
 
 ## Coût de la BOM du produit - Léo
 > Consigne : 

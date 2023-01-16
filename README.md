@@ -39,18 +39,16 @@ Notre produit peut avoir de multiple utilité et donc de multiple client potenti
 Une vidéo de démonstration est disponible ici.
 
 ## Analyse de marché - Chloé
-> Consigne : rechercher et analyser (avantages/inconvénients sous la forme d’une grille) des produits concurrents
-> Consigne : réaliser une analyse (rapide) du marché des produits commerciaux concurrents
 
-Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut impérativement faire un devis au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
+Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut **impérativement faire un devis** au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
 Néamoins, nous avons trouvé quelques concurrent potentielle :
 
 
-|Marque |Produit|Avantage|Inconveniant |
-|Wx Company|Capteur d'occupation et confort|Capteur de presence PIR, comptage avec une caméra, mesure de la température et de la qualité de l'air. Application mobile pour voir les données en temps réel |Pas d'écran sur la porte et donc obligation d'avoir l'application mobile, Pas de capteur de confort sonore|
-|ubigreen Smart Office|Capteur d'occupation connectés|Installation facile, en dessous des tables afin de detecter les genoux avec un PIR sensor, bas débit LPWAN, Site web et application mobile|Detecte la presence uniquement si les personnes sont assisent, pas de capteur de confort sonore|
-|spaceti|Capteur d'occupation (pièce)|Durée de vie estimée de la batterie - Jusqu'à 15 ans|Uniquement un PIR sensor, pas d'ecran sur la porte|
-|XPAIR|Insight-sensor|Caméra infrarouge et thermique qui permet de garder l'anonymat, connecté en BLE, Mesure la presence, le nombre, mesure du confort sonore ansi que une 10ène d'autre information sur le confort général|pas d'ecran sur la porte|
+|Marque |Avantage|Inconveniant |
+|Wx Company|Capteur température/qualité de l'air. Application mobile|Pas d'écran sur la porte, pas de capteur de confort sonore|
+|ubigreen Smart Office|bas débit LPWAN, Site web/application mobile|Detection en dessous des tables,pas d'ecran sur la porte, pas de capteur de confort sonore|
+|spaceti|Durée de vie batterie - Jusqu'à 15 ans|Uniquement un PIR sensor, pas d'ecran sur la porte, pas de capteur de confort sonore|
+|XPAIR|Caméra thermique (anonymat, BLE, mesure du confort sonore|pas d'ecran sur la porte|
 
 On remarque que le desavantage commun de tout nos concurrents est **l'absence d'un écran tel que notre Wio terminal au niveau des portes des salles de réunion**. Nous devons donc mettre en avant cette différence afin de vendre au mieux notre produit.
 

@@ -135,7 +135,25 @@ Les certifications coutent en moyenne 800€ pour 3 ans de validité. On peut do
 
 ## Trame Wi-FI
 
- Wio Terminal utilise la version 2.4GHz de la norme WiFi (IEEE 802.11b/g/n).
+Dans notre cas, notre Wio Terminal est un point d'accès Wi-Fi et notre ESP32-EYE est une station.
+Wio Terminal utilise la version 2.4GHz de la norme WiFi (IEEE 802.11b/g/n). Les types de trames WiFi (802.11b/g/n) sont :
+
+### Trame de management (Management frame) : 
+- Beacon: utilisé par les points d'accès pour annoncer leur présence sur le réseau.
+- Probe request: utilisé par les stations pour rechercher des points d'accès disponibles.
+- Probe response: utilisé par les points d'accès pour répondre aux demandes de sondes.
+- Association request: utilisé par les stations pour demander à s'associer à un point d'accès.
+- Association response: utilisé par les points d'accès pour accepter ou refuser les demandes d'association.
+
+### Trame de contrôle de liaison (Control frame) 
+
+- RTS (Request to send) : utilisé pour demander l'accès au support pour envoyer des données.
+- CTS (Clear to send) : utilisé pour donner l'autorisation de transmettre des données.
+- ACK (acknowledgment) : utilisé pour indiquer la réception réussie d'une trame de données.
+
+### Trame de données (Data frame) : 
+Utilisée pour transmettre des données utiles entre les stations.
+Dans notre cas, le nombre de personne presente dans la pièce, le niveau sonore, et potentiellement des photos.
 
 ## Logiciel embarqué de l'objet - Léo
 > Consigne : définir le logiciel embarqué de l’objet.

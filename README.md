@@ -154,7 +154,20 @@ La comsommation de notre produit est consequente, ceci du fait des transmission 
 Pour ce qui est du Wio Terminal, Nous utilisons le module ajoutant une **batterie LiPo de 650 mAh**. Cette batterie à une **autonomie de 7h en utilisation continue**. Il est donc demander à l'utilisateur de le brancher tous les soirs.
 
 ## Analyse du cycle de vie du produit - Chloe
-> Consigne : réaliser une analyse (brève) du cycle de vie du produit “durable” et “[sobre](https://www.youtube.com/watch?v=aX_tzI7w7Qo)” ([ACV](https://fr.wikipedia.org/wiki/Analyse_du_cycle_de_vie))
+
+L'analyse du cycle de vie d'un produit prend en compte plusieurs critères comme, l'extraction des matières premières, la production, l'utilisation, la fin de vie et le recyclage.
+
+### l'extraction des matières premières
+Notre produit est fabriqués à partir de **métaux rares et de matières plastiques**. Il faudrait que ces matières premières sont extraites de manière responsable pour minimiser l'impact environnemental.
+
+### La production du produit 
+Ceci implique l'assemblage des différents composants électroniques. Ce qui peut générer des **déchets électroniques** et des émissions de gaz à effet de serre. Il faudrait que la production se fasse de manière éco-responsable et que les déchets soit correctement gérés.
+ 
+### l'utilisation du produit
+Notre produit consomme de l'énergie pour fonctionner. De **l'électricité**, et de la **bande passante**. Il faudrait que l'electricité consommé soit la plus verte possible.
+
+### le recyclage du produit
+A la fin de vie de de notre produit, on pourra recycler une grande partie des composants électroniques, mais aussi et surtout la batterie Lipo en la déposant dans un centre de recyclage spécialisé. La batterie est la partie du produit qui est le plus suceptible d'être défectueuse rapidement. On peut compter 200 à 300 cycles de charge/décharge si elle est utilisée et entretenue correctement. Cela signifie qu'utilisée quotidiennement, elle pourrait durer environ **un an ou deux** avant de nécessiter un remplacement. Les autres composant peuvent quand à eu on une durée de vie qui varie **entre 5 et 15 ans** en fonction de leur entretient.
 
 ## Montrer les intégrations effectuées
 > Consigne : montrer les intégrations effectuées (cayenne, influxdb, home assistant, jupyter notebook …)

@@ -2,10 +2,6 @@
 # Mesure d'occupation de salle et de niveau sonore
 
 ## Aide a la mise en forme 
-```c
-printf('mettre du code');
-```
-
 
 ## Objectif - Chloe & Léo
 

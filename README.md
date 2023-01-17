@@ -1,7 +1,6 @@
 # RAPPORT PROJET IOT 2022/2023
 # Mesure d'occupation de salle et de niveau sonore
 
-## Aide a la mise en forme 
 
 ## Objectif - Chloe & Léo
 

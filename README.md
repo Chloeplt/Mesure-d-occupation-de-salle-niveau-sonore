@@ -46,7 +46,6 @@ Néamoins, nous avons trouvé quelques concurrent potentielle :
 On remarque que le desavantage commun de tout nos concurrents est **l'absence d'un écran tel que notre Wio terminal au niveau des portes des salles de réunion**. Nous devons donc mettre en avant cette différence afin de vendre au mieux notre produit.
 
 ## Architechture globale du système
-> Consigne : définir l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
 
 Le système est composé d’un **WIO Terminal**, d’un **ESP32-EYE** et d’un **capteur de présence PIR**. 
  L’**ESP32-EYE** est un capteur embarquant une **caméra** et un **microphone**. Il communiquera avec le **Wio Terminal** grâce au protocole **Wifi**. Le **capteur PIR** sera utilisé pour **détecter la présence** de quelqu’un et communiquera directement avec le **Wio Terminal** sur lequel il sera branché. Enfin nous utiliserons des éléments directement présent sur le **Wio Terminal** tel qu’une **LED**, des **boutons** pour avoir **plusieurs mods de fonctionnement** (mode normal, mode économie d'énergie, mode débugage), ainsi que l’écran d’affichage si besoin, cela dépendra de l’autonomie souhaité et du mode en cours d’utilisation. Pour le mode normal il sera possible d’afficher des données en temps réel et l’écran pourra être utile pour le mode débugage car on pourra afficher plus de variables.
@@ -76,7 +75,6 @@ Un **SSID** et un **mot de passe** seront d’ores et déjà configuré dans le 
 
 
 ## Respect de la vie privée du service 
-> Consigne : définir le respect de la vie privée du service ([RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)) : lister les risques d’atteinte au respect de la vie privée
 
 Pour la **caméra**, le **micro** et le **capteur de détection PIR**, le principal risque d’atteinte au respect de la vie privée provient d’une possible déduction d’informations sur les activités et les habitudes de vie des personnes dans l'environnement **surveillé**. 
 
@@ -94,10 +92,6 @@ Pour la partie avertissement des utilisateurs, leur diffuser une **politique de 
 ![alt text](https://github.com/Chloeplt/Mesure-d-occupation-de-salle-niveau-sonore/blob/main/img/Architecture_Materielle.png?raw=true)
 
 ## Coût de la BOM du produit
-> Consigne : 
-> estimer le coût de la BOM de votre produit (composants, PCB et enclosure) pour 5000 unités produites
-. pour le boitier, vous pouvez rechercher des boitiers “standards” disponibles dans les catalogues fournisseurs
-. pour le PCB, vous pouvez fournir une estimation du prix de fabrication du PCB et du masque chez des fournisseurs comme [https://jlcpcb.com/](https://jlcpcb.com/) , [https://www.wedirekt.fr/fr/](https://www.wedirekt.fr/fr/) …
 
 | Matériel        | Quantité | Prix unitaire      | Prix total       |
 |-----------------|----------|--------------------|------------------|
@@ -151,7 +145,6 @@ Utilisée pour transmettre des données utiles entre les stations.
 Dans notre cas, le nombre de personne presente dans la pièce, le niveau sonore, et potentiellement des photos.
 
 ## Logiciel embarqué de l'objet
-> Consigne : définir le logiciel embarqué de l’objet.
 
 Pour le langage de programmation, nous avons choisi d'utiliser **Arduino**. Même si ce n'est pas le plus optimisé ni celui qui consomme le moins, nous le trouvions utile dans le **cadre de ce projet**. Les **points négatifs** du langage **Arduino** tels que sa **capacité de stockage limitée** ou sa **taille mémoire** ne posaient **pas de problème** ici. 
 
@@ -159,8 +152,6 @@ En effet, ce dernier permet une **prise en main rapide** et possède une s**ynta
 
 
 ## Métrique logiciel
-> Consigne : donner les métriques logiciel du logiciel embarqué (nombre de lignes de code, taille du binaire du firmware ie le fichier .bin)
-> Consigne :  compter le nombre de lignes de code développé (coté objet, coté application) avec un outil comme [cloc](https://github.com/AlDanial/cloc). Précisez les langages et les outils utilisés (git, arduino-cli …)
 
 ### Coté Wio Terminal :
 Fichier **Wio_Terminal_code.ino** :

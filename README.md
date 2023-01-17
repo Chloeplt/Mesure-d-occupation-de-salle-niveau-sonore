@@ -120,18 +120,15 @@ Le cout de la certification ETSI dépend principalement des normes ETSI appliqu�
 Le Wio terminal utilise des bandes passantes de fréquences 2.4 GHz, nous pouvons donc en déduire certaine norme applicable à notre produit :
 
 -	**EN 300 328:** Cette norme spécifie les exigences pour l'utilisation des bandes de fréquences de 2,4 GHz pour les dispositifs sans fil dans l'Union Européenne. Cette norme couvre les exigences de compatibilité électromagnétique (CEM) et de sécurité pour les dispositifs sans fil utilisant ces bandes de fréquences.
--	
+
 -	**EN 301 489-1:** Cette norme spécifie les exigences pour l'immunité électromagnétique pour les équipements terminaux et les équipements réseau utilisés dans les systèmes de communication électronique.
--	
+
 -	**EN 301 489-17:** Cette norme spécifie les exigences pour la sécurité des équipements terminaux et des réseaux utilisés dans les systèmes de communication électronique.
--	
+
 -	**EN 303 645:** Cette norme spécifie les exigences de sécurité pour les objets connectés (smart-objects) utilisant les technologies de communication radio. 
 
 Les certifications coutent en moyenne 800€ pour 3 ans de validité. On peut donc estimer un **total de 1067€/ans.**
 
-
-## Implémentation du logiciel embarqué - Léo 
-> Consigne : proposer une implémentation du logiciel embarqué de l’objet défini.
 
 ## Trame Wi-FI
 
@@ -183,10 +180,6 @@ Fichier **Free_Fonts.h** :
 * **85 lignes de commentaires**
 * **24 #define utilisés**
 
-## Instrumentation du logiciel embarqué
-> Consigne : Instrumenter le logiciel embarqué pour mesurer les différents temps d’exécution des principales phases d’exécution (par exemple: durée d’une prise de photo, écriture sur carte SD, inférences avec un réseau de neurones …)
-Prévoir de montrer la trace console de l’objet pendant la démonstration.
-
 ## Alimentation du produit
 
 La comsommation de notre produit est consequente, ceci du fait des transmission de donnée via le Wi-Fi et de l'utilisation d'une caméra. Pour la camera, nous avons donc decidé de ne pas utiliser de batterie mais de **brancher notre système directement au secteur** en utilisant un adaptateur **Micro-USB (5V, 3A)**. Etant donnée que la camera sera contre un mur ou au plafond, ça ne sera pas derangeant pour l'utilisation.
@@ -208,9 +201,6 @@ Notre produit consomme de l'énergie pour fonctionner. De **l'électricité**, e
 
 ### le recyclage du produit
 A la fin de vie de de notre produit, on pourra recycler une grande partie des composants électroniques, mais aussi et surtout la batterie Lipo en la déposant dans un centre de recyclage spécialisé. La batterie est la partie du produit qui est le plus suceptible d'être défectueuse rapidement. On peut compter 200 à 300 cycles de charge/décharge si elle est utilisée et entretenue correctement. Cela signifie qu'utilisée quotidiennement, elle pourrait durer environ **un an ou deux** avant de nécessiter un remplacement. Les autres composant peuvent quand à eu on une durée de vie qui varie **entre 5 et 15 ans** en fonction de leur entretient.
-
-## Montrer les intégrations effectuées
-> Consigne : montrer les intégrations effectuées (cayenne, influxdb, home assistant, jupyter notebook …)
 
 
 

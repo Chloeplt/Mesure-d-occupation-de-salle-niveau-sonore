@@ -168,6 +168,15 @@ Fichier **Free_Fonts.h** :
 * **85 lignes de commentaires**
 * **24 #define utilisés**
 
+### Cote ESP-EYE
+Fichier **i2s_ADC_confort-sonore.ino**
+* **Taille du fichier : 4.86 Ko**
+* **133 lignes de code**
+
+Fichier **CameraWebServer.ino**
+* **Taille du fichier : 4.67 Ko**
+* **153 lignes de code**
+
 ## Alimentation du produit
 
 La comsommation de notre produit est consequente, ceci du fait des transmission de donnée via le Wi-Fi et de l'utilisation d'une caméra. Pour la camera, nous avons donc decidé de ne pas utiliser de batterie mais de **brancher notre système directement au secteur** en utilisant un adaptateur **Micro-USB (5V, 3A)**. Etant donnée que la camera sera contre un mur ou au plafond, ça ne sera pas derangeant pour l'utilisation.

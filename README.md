@@ -32,6 +32,8 @@ Notre produit peut avoir de multiple utilité et donc de multiple client potenti
 
 Une vidéo de démonstration est disponible ici.
 
+https://drive.google.com/drive/folders/181wm0XhsHDg3s_iM2QxCAcid1apHPN5r?usp=share_link
+
 ## Analyse de marché
 
 Les capteurs d'occupation de salle et de confore sonore sont presque exclusivement adressé au entreprise. Pour avoir accès à des information supplémentaire sur les poduit, il faut **impérativement faire un devis** au nom de son entreprise. Il est donc très difficile de faire une analyse de marché pour pouvoir comparé notre produit.
